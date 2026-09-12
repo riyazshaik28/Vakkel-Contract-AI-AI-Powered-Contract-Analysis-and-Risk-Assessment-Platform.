@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-paper text-ink antialiased;
+    font-family: "DM Sans", sans-serif;
+  }
+}
+
+@layer components {
+  .font-display { font-family: "Playfair Display", serif; }
+  .card { @apply rounded-2xl border border-slate-200/80 bg-white shadow-soft; }
+  .eyebrow { @apply text-[11px] font-bold uppercase tracking-[0.2em] text-teal; }
+}
